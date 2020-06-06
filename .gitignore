@@ -163,5 +163,21 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.pyc
+*.pyo
 
 # End of https://www.toptal.com/developers/gitignore/api/python,virtualenv,windows
+
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]

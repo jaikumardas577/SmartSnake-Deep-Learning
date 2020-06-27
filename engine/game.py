@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 
 #loading The Model
 
-model = keras.models.load_model('D:/TensorFlowEnv/SmartSnake-Deep-Learningtraining/models/my_model-version1.1')
+model = keras.models.load_model('D:/TensorFlowEnv/SmartSnake-Deep-Learning/training/models/my_model-version1.1')
 
 
 def predict(L1,L2,L3,L4,Gradient1,oreintation):

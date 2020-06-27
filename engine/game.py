@@ -1,4 +1,6 @@
-from interfaceD.models import *
+import sys
+sys.path.append("D:\TensorFlowEnv\SmartSnake-Deep-Learning")
+from interface.models import *
 import csv
 import os
 from pyfiglet import Figlet
@@ -15,7 +17,7 @@ warnings.filterwarnings("ignore")
 
 #loading The Model
 
-model = keras.models.load_model('my_model-version1.1')
+model = keras.models.load_model('D:/TensorFlowEnv/SmartSnake-Deep-Learningtraining/models/my_model-version1.1')
 
 
 def predict(L1,L2,L3,L4,Gradient1,oreintation):
@@ -80,7 +82,7 @@ while(True):
     if snake.getPosx == food.getPosx and snake.getPosY == food.getPosY:
         food = Food(board)
 
-    # Function for writting data into Csv File for Trainin
+    # Function for writting data into Csv File for Training.
 
     # data_writer.writerow([snake.getL1(board),snake.getL2(board), snake.getL3(board),snake.getL4(board),snake.getGradient1(food),snake.oreintation(food),movement])
 
